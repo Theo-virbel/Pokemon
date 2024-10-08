@@ -1,4 +1,4 @@
-# Pokémon Tournament Simulation
+# Tournoi Pokémon
 
 # Description
 

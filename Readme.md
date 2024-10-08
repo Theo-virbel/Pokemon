@@ -1,4 +1,5 @@
 # Tournoi Pokémon
+Pour ce projet j'ai utilisé Flask qui est un framework de Python pour le web.
 
 # Description
 

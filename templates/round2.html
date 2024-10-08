@@ -6,10 +6,10 @@
     <title>Round 2 - Tournoi Pokémon</title>
     <link rel="stylesheet" href="/static/styles.css">
     <script>
-        // Redirige vers le round 3 après 5 secondes
+        // Redirige vers le round 3 après 10 secondes
         setTimeout(function() {
             window.location.href = "{{ url_for('round3', winner_id=round2_result['winner']['id']) }}";
-        }, 5000);  // 5000 ms = 5 secondes
+        }, 10000);  
     </script>
 </head>
 <body>

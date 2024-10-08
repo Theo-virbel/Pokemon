@@ -46,7 +46,7 @@ def get_random_pokemon(pokemon_list):
             'name': data['name'],
             'stats': stats,
             'id': pokemon_id,
-            'sprite': data['sprites']['front_default']
+            'sprite': data['sprites']['front_default']  # L'URL de l'image du Pokémon
         }
     else:
         # Si la réponse n'est pas 200, afficher une erreur et retourner None

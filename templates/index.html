@@ -11,7 +11,6 @@
             window.location.href = "{{ url_for('round1') }}";
         }, 5000);  // 5000 ms = 5 secondes
     </script>
-
 </head>
 <body>
     <div>
@@ -22,7 +21,10 @@
         <ul>
             {% if session.get('pokemons') %}
                 {% for pokemon in session['pokemons'] %}
-                    <li>{{ pokemon['name'] }}</li>
+                    <li>
+                        <img src="{{ pokemon['sprite'] }}" alt="{{ pokemon['name'] }}" style="width: 50px; height: 50px;">
+                        {{ pokemon['name'] }}
+                    </li>
                 {% endfor %}
             {% else %}
                 <li>Aucun participant n'a été sélectionné.</li>
@@ -31,6 +33,5 @@
     </div>
 </body>
 </html>
-
 
 
